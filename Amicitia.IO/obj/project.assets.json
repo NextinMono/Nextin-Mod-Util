@@ -6721,11 +6721,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Amicitia.IO\\Amicitia.IO.csproj",
+      "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\Amicitia.IO\\Amicitia.IO.csproj",
       "projectName": "Amicitia.IO",
-      "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Amicitia.IO\\Amicitia.IO.csproj",
+      "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\Amicitia.IO\\Amicitia.IO.csproj",
       "packagesPath": "C:\\Users\\windo\\.nuget\\packages\\",
-      "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Amicitia.IO\\obj\\",
+      "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\Amicitia.IO\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [

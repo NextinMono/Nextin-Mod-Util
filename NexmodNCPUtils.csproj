@@ -10,16 +10,19 @@
 
   <ItemGroup>
     <Compile Remove="Amicitia.IO\**" />
+    <Compile Remove="SharpNeedle\**" />
     <Compile Remove="XNCPLib\**" />
     <EmbeddedResource Remove="Amicitia.IO\**" />
+    <EmbeddedResource Remove="SharpNeedle\**" />
     <EmbeddedResource Remove="XNCPLib\**" />
     <None Remove="Amicitia.IO\**" />
+    <None Remove="SharpNeedle\**" />
     <None Remove="XNCPLib\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SharpNeedle\Source\Dependencies\Amicitia.IO\src\Amicitia.IO\Amicitia.IO.csproj" />
-    <ProjectReference Include="..\..\SharpNeedle\Source\SharpNeedle\SharpNeedle.csproj" />
+    <ProjectReference Include="SharpNeedle\Source\Dependencies\Amicitia.IO\src\Amicitia.IO\Amicitia.IO.csproj" />
+    <ProjectReference Include="SharpNeedle\Source\SharpNeedle\SharpNeedle.csproj" />
     <ProjectReference Include="XNCPLib\XNCPLib.csproj" />
   </ItemGroup>
 

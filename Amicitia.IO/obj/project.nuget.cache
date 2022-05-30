@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PJXUKBAEOneq4Yge3EY0klbEOlr4vdlVqFOV5G6NZFhULP511+hHeI5X7DNSxeGfDN5O8fREnR28AjG1JnoW3w==",
+  "dgSpecHash": "eNa+yY6zKimNfbwl0n3dlFIabkK4qIQunbbB0JSgwoeOkgnFse9Iy4vImWZ7mHYTQ5SPw97zD6xZZ+yChirk6Q==",
   "success": true,
-  "projectFilePath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Amicitia.IO\\Amicitia.IO.csproj",
+  "projectFilePath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\Amicitia.IO\\Amicitia.IO.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\windo\\.nuget\\packages\\benchmarkdotnet\\0.12.0\\benchmarkdotnet.0.12.0.nupkg.sha512",
     "C:\\Users\\windo\\.nuget\\packages\\benchmarkdotnet.annotations\\0.12.0\\benchmarkdotnet.annotations.0.12.0.nupkg.sha512",

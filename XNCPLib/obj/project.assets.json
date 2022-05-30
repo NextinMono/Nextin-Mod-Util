@@ -5234,8 +5234,8 @@
     },
     "Amicitia.IO/1.0.0": {
       "type": "project",
-      "path": "../../../SharpNeedle/Source/Dependencies/Amicitia.IO/src/Amicitia.IO/Amicitia.IO.csproj",
-      "msbuildProject": "../../../SharpNeedle/Source/Dependencies/Amicitia.IO/src/Amicitia.IO/Amicitia.IO.csproj"
+      "path": "../SharpNeedle/Source/Dependencies/Amicitia.IO/src/Amicitia.IO/Amicitia.IO.csproj",
+      "msbuildProject": "../SharpNeedle/Source/Dependencies/Amicitia.IO/src/Amicitia.IO/Amicitia.IO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5250,11 +5250,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\XNCPLib.csproj",
+      "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\XNCPLib.csproj",
       "projectName": "XNCPLib",
-      "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\XNCPLib.csproj",
+      "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\XNCPLib.csproj",
       "packagesPath": "C:\\Users\\windo\\.nuget\\packages\\",
-      "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\obj\\",
+      "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\windo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5271,8 +5271,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
-              "projectPath": "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj"
+            "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
+              "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj"
             }
           }
         }

@@ -7,13 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexmodNCPUtils", "NexmodNCP
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XNCPLib", "XNCPLib\XNCPLib.csproj", "{74D7764F-0D36-4909-8A45-28746ED99888}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpNeedle", "..\..\SharpNeedle\Source\SharpNeedle\SharpNeedle.csproj", "{C8AB5461-B6DD-4714-9C21-02DE27FEC946}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpNeedle", "SharpNeedle\Source\SharpNeedle\SharpNeedle.csproj", "{EC42C16F-3F35-4150-B1C2-2CAEA19A37F3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amicitia.IO", "..\..\SharpNeedle\Source\Dependencies\Amicitia.IO\src\Amicitia.IO\Amicitia.IO.csproj", "{EFB6A472-53B3-4112-BF31-715AC6F676E7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amicitia.IO", "SharpNeedle\Source\Dependencies\Amicitia.IO\src\Amicitia.IO\Amicitia.IO.csproj", "{19FCA167-3072-4E2A-A507-32519882FBBF}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\..\SharpNeedle\Source\SharpNeedle.Shared\SharpNeedle.Shared.projitems*{c8ab5461-b6dd-4714-9c21-02de27fec946}*SharedItemsImports = 5
+		SharpNeedle\Source\SharpNeedle.Shared\SharpNeedle.Shared.projitems*{ec42c16f-3f35-4150-b1c2-2caea19a37f3}*SharedItemsImports = 5
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,14 +28,14 @@ Global
 		{74D7764F-0D36-4909-8A45-28746ED99888}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74D7764F-0D36-4909-8A45-28746ED99888}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74D7764F-0D36-4909-8A45-28746ED99888}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC42C16F-3F35-4150-B1C2-2CAEA19A37F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC42C16F-3F35-4150-B1C2-2CAEA19A37F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC42C16F-3F35-4150-B1C2-2CAEA19A37F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC42C16F-3F35-4150-B1C2-2CAEA19A37F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19FCA167-3072-4E2A-A507-32519882FBBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19FCA167-3072-4E2A-A507-32519882FBBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19FCA167-3072-4E2A-A507-32519882FBBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19FCA167-3072-4E2A-A507-32519882FBBF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

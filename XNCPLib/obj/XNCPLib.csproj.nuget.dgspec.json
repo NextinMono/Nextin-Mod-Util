@@ -1,81 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\XNCPLib.csproj": {}
+    "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\XNCPLib.csproj": {}
   },
   "projects": {
-    "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\XNCPLib.csproj": {
+    "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\XNCPLib.csproj",
-        "projectName": "XNCPLib",
-        "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\XNCPLib.csproj",
-        "packagesPath": "C:\\Users\\windo\\.nuget\\packages\\",
-        "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\XNCPLib\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\windo\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
-                "projectPath": "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "System.Drawing.Common": {
-              "target": "Package",
-              "version": "[5.0.2, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj",
+        "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj",
         "projectName": "Amicitia.IO",
-        "projectPath": "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj",
+        "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj",
         "packagesPath": "C:\\Users\\windo\\.nuget\\packages\\",
-        "outputPath": "F:\\Programming n Testing\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\obj\\",
+        "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
@@ -171,6 +107,70 @@
           "warn": true,
           "frameworkReferences": {
             "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\XNCPLib.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\XNCPLib.csproj",
+        "projectName": "XNCPLib",
+        "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\XNCPLib.csproj",
+        "packagesPath": "C:\\Users\\windo\\.nuget\\packages\\",
+        "outputPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\XNCPLib\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\windo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
+                "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },

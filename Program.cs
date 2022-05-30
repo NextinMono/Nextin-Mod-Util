@@ -118,8 +118,21 @@ public class Program
             }
             else
             {
-                Console.Clear();
-                Console.WriteLine("Not going to implement it for now, too much of a pain.");
+                string path;
+                if (Environment.GetCommandLineArgs().Length == 1)
+                {
+                    Console.Write("Enter path of the GNCP file [NOTE: You'll have to extract textures on your own]: ");
+                    path = @Console.ReadLine();
+                }
+                else
+                    path = @Environment.GetCommandLineArgs()[1];
+                path = path.Replace("\"", "");
+                if (Path.GetExtension(@path).IndexOf(".gncp", StringComparison.OrdinalIgnoreCase) < 0)
+                {
+                    Console.WriteLine("Aborted.");
+                    return;
+                }
+                ConvertGNCP(path);
             }
 
 
