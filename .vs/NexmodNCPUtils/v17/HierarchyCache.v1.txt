@@ -1,0 +1,263 @@
+﻿++Solution 'EndianSwapXNCP' ‎(3 of 3 projects)
+++XNCPLib
+i:{00000000-0000-0000-0000-000000000000}:XNCPLib
+++Dependencies
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:>1171
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1520
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:>858
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:>1556
+++Analyzers
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:analyzers
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:analyzers
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:analyzers
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:analyzers
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:analyzers
+++Frameworks
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:frameworks
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:frameworks
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:frameworks
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:frameworks
+++Packages
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:packages
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:packages
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:packages
+++Projects
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:projects
+++Amicitia.IO
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\amicitia.io.csproj
+i:{00000000-0000-0000-0000-000000000000}:Amicitia.IO
+++Extensions
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\extensions\
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\extensions\
+++Misc
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\misc\
+++XNCP
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\
+++Microsoft.CodeAnalysis.Analyzers
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:c:\users\windo\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.1\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:c:\users\windo\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.1\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:c:\users\windo\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.1\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:c:\users\windo\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.1\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:c:\users\windo\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.1\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:c:\users\windo\.nuget\packages\microsoft.codeanalysis.analyzers\2.6.1\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
+++Microsoft.CodeAnalysis.NetAnalyzers
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:c:\program files\dotnet\sdk\6.0.101\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.netanalyzers.dll
+++System.Text.Json.SourceGeneration
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:c:\program files\dotnet\packs\microsoft.netcore.app.ref\6.0.1\analyzers\dotnet\cs\system.text.json.sourcegeneration.dll
+++Microsoft.NETCore.App
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\microsoft.netcore.app
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:f:\programming n testing\endianswap\endianswapxncp\microsoft.netcore.app
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:f:\programming n testing\endianswap\endianswap\microsoft.netcore.app
+++System.Drawing.Common (5.0.2)
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:>1178
+++IOExtensions.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\extensions\ioextensions.cs
+++Utilities.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\misc\utilities.cs
+++Animation
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\animation\
+++Cast.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\cast.cs
+++CastDictionary.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\castdictionary.cs
+++CastGroup.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\castgroup.cs
+++CastHierarchyTreeNode.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\casthierarchytreenode.cs
+++CastInfo.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\castinfo.cs
+++CastMaterialInfo.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\castmaterialinfo.cs
+++ChunkFile.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\chunkfile.cs
+++CSDNode.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\csdnode.cs
+++EndChunk.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\endchunk.cs
+++FAPCEmbeddedRes.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\fapcembeddedres.cs
+++FAPCFile.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\fapcfile.cs
+++Font.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\font.cs
+++FontList.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\fontlist.cs
+++NCPJChunk.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\ncpjchunk.cs
+++NodeDictionary.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\nodedictionary.cs
+++OffsetChunk.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\offsetchunk.cs
+++Scene.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\scene.cs
+++SubImage.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\subimage.cs
+++XTexture.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\xtexture.cs
+++XTextureListChunk.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\xtexturelistchunk.cs
+++AnimationDictionary.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\animation\animationdictionary.cs
+++AnimationKeyframeData.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\animation\animationkeyframedata.cs
+++CastAnimationData.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\animation\castanimationdata.cs
+++GroupAnimationData.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\animation\groupanimationdata.cs
+++Keyframe.cs
+i:{74d7764f-0d36-4909-8a45-28746ed99888}:f:\programming n testing\endianswap\endianswapxncp\xncplib\xncp\animation\keyframe.cs
+++Binary
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\
+++Generics
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\generics\
+++Streams
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\
+++Utilities
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\utilities\
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\utilities\
+++AlignmentHelper.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\alignmenthelper.cs
+++BitField.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\bitfield.cs
+++BitHelper.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\bithelper.cs
+++FileStreamingMode.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\filestreamingmode.cs
+++SpanList.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\spanlist.cs
+++Variant.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\variant.cs
+++netstandard2.0
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1531
+++netstandard2.1
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1521
+++BinaryObjectReader.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\binaryobjectreader.cs
+++BinaryObjectWriter.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\binaryobjectwriter.cs
+++BinaryOperations.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\binaryoperations.cs
+++BinarySourceInfo.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\binarysourceinfo.cs
+++BinaryValueReader.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\binaryvaluereader.cs
+++BinaryValueWriter.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\binaryvaluewriter.cs
+++DefaultOffsetHandler.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\defaultoffsethandler.cs
+++Endianness.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\endianness.cs
+++IBinarySerializable.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\ibinaryserializable.cs
+++IDynamicBinarySerializable.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\idynamicbinaryserializable.cs
+++IOffsetHandler.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\ioffsethandler.cs
+++OffsetBinaryFormat.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\offsetbinaryformat.cs
+++OffsetOriginToken.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\offsetorigintoken.cs
+++StringBinaryFormat.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\stringbinaryformat.cs
+++GenericNumber.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\generics\genericnumber.cs
+++Number.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\generics\number.cs
+++CachedBlockBufferedStream.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\cachedblockbufferedstream.cs
+++NullStream.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\nullstream.cs
+++SeekToken.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\seektoken.cs
+++StreamExtensions.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\streamextensions.cs
+++StreamOwnership.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\streamownership.cs
+++StreamSpan.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\streams\streamspan.cs
+++UnsafeEx.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\utilities\unsafeex.cs
+++BinaryObjectReaderExtensions.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\extensions\binaryobjectreaderextensions.cs
+++BinaryObjectWriterExtensions.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\extensions\binaryobjectwriterextensions.cs
+++BinaryValueReaderExtensions.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\extensions\binaryvaluereaderextensions.cs
+++BinaryValueWriterExtensions.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\extensions\binaryvaluewriterextensions.cs
+++OffsetHandlerExtensions.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\extensions\offsethandlerextensions.cs
+++TypeBinaryReverseMethodGenerator.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\utilities\typebinaryreversemethodgenerator.cs
+++TypeDynamicBinarySerializerMethodGenerator.cs
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\binary\utilities\typedynamicbinaryserializermethodgenerator.cs
+++BenchmarkDotNet (0.12.0)
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1536
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1527
+++NETStandard.Library (2.0.3)
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1535
+++System.Memory (4.5.3)
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1534
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1526
+++System.Runtime.CompilerServices.Unsafe (4.7.0)
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1533
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:>1525
+++NETStandard.Library
+i:{86655fed-a414-475e-87d8-f78b6c4bf255}:f:\programming n testing\endianswap\endianswapxncp\amicitia.io\netstandard.library
+++EndianSwapXNCP
+i:{00000000-0000-0000-0000-000000000000}:EndianSwapXNCP
+++Program.cs
+i:{1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568}:f:\programming n testing\endianswap\endianswapxncp\program.cs
+i:{6ac60d89-b5d1-4862-8bf2-5086b9857d15}:f:\programming n testing\endianswap\endianswap\program.cs
+++bin
+++obj
+++Debug
+++Amicitia.IO.csproj.nuget.dgspec.json
+++Amicitia.IO.csproj.nuget.g.props
+++Amicitia.IO.csproj.nuget.g.targets
+++project.assets.json
+++project.nuget.cache
+++XNCPLib.csproj.nuget.dgspec.json
+++XNCPLib.csproj.nuget.g.props
+++XNCPLib.csproj.nuget.g.targets
+++net6.0
+++Amicitia.IO.deps.json
+++Amicitia.IO.dll
+++Amicitia.IO.pdb
+++.NETStandard,Version=v2.0.AssemblyAttributes.cs
+++Amicitia.IO.AssemblyInfo.cs
+++Amicitia.IO.AssemblyInfoInputs.cache
+++Amicitia.IO.assets.cache
+++Amicitia.IO.csproj.AssemblyReference.cache
+++Amicitia.IO.csproj.CoreCompileInputs.cache
+++Amicitia.IO.csproj.FileListAbsolute.txt
+++Amicitia.IO.GeneratedMSBuildEditorConfig.editorconfig
+++.NETStandard,Version=v2.1.AssemblyAttributes.cs
+++ref
+++XNCPLib.deps.json
+++XNCPLib.dll
+++XNCPLib.pdb
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+++XNCPLib.AssemblyInfo.cs
+++XNCPLib.AssemblyInfoInputs.cache
+++XNCPLib.assets.cache
+++XNCPLib.csproj.AssemblyReference.cache
+++XNCPLib.csproj.CopyComplete
+++XNCPLib.csproj.CoreCompileInputs.cache
+++XNCPLib.csproj.FileListAbsolute.txt
+++XNCPLib.GeneratedMSBuildEditorConfig.editorconfig
+++Solution 'EndianSwapXNCP' ‎(4 of 4 projects)
+i:{00000000-0000-0000-0000-000000000000}:EndianSwapXNCP.sln
+++EndianSwap
+i:{00000000-0000-0000-0000-000000000000}:EndianSwap
+++C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\..\analyzers\Microsoft.CodeAnalysis.CSharp.NetAnalyzers.dll
+++C:\Program Files\dotnet\sdk\6.0.101\Sdks\Microsoft.NET.Sdk\targets\..\analyzers\Microsoft.CodeAnalysis.NetAnalyzers.dll

@@ -1,0 +1,157 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PuyoToolsCli/3.0.0-dev": {
+        "dependencies": {
+          "FormatWith": "3.0.1",
+          "Microsoft.Extensions.FileSystemGlobbing": "6.0.0",
+          "PuyoTools.Core": "1.0.0",
+          "System.CommandLine": "2.0.0-beta3.22106.2",
+          "System.CommandLine.NamingConventionBinder": "2.0.0-beta3.22106.2"
+        },
+        "runtime": {
+          "PuyoToolsCli.dll": {}
+        }
+      },
+      "FormatWith/3.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/FormatWith.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.1.0"
+          }
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.21.52210"
+          }
+        }
+      },
+      "SixLabors.ImageSharp/2.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      },
+      "System.CommandLine/2.0.0-beta3.22106.2": {
+        "dependencies": {
+          "System.Memory": "4.5.4"
+        },
+        "runtime": {
+          "lib/net6.0/System.CommandLine.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.22.10602"
+          }
+        }
+      },
+      "System.CommandLine.NamingConventionBinder/2.0.0-beta3.22106.2": {
+        "dependencies": {
+          "System.CommandLine": "2.0.0-beta3.22106.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.CommandLine.NamingConventionBinder.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.22.10602"
+          }
+        }
+      },
+      "System.Memory/4.5.4": {},
+      "System.Runtime.CompilerServices.Unsafe/6.0.0": {},
+      "System.Text.Encoding.CodePages/6.0.0": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
+        }
+      },
+      "PuyoTools.Core/1.0.0": {
+        "dependencies": {
+          "SixLabors.ImageSharp": "2.0.0",
+          "System.Text.Encoding.CodePages": "6.0.0"
+        },
+        "runtime": {
+          "PuyoTools.Core.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PuyoToolsCli/3.0.0-dev": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FormatWith/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qAgVI8A9l33ZoOS/16slW82YktWWezb4sx535lGqdHSPB3ULVKWg6BJ4oi3FltFjNiMa3bypqFdmoFFgHZxkdA==",
+      "path": "formatwith/3.0.1",
+      "hashPath": "formatwith.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ip8jnL1aPiaPeKINCqaTEbvBFDmVx9dXQEBZ2HOBRXPD1eabGNqP/bKlsIcp7U2lGxiXd5xIhoFcmY8nM4Hdiw==",
+      "path": "microsoft.extensions.filesystemglobbing/6.0.0",
+      "hashPath": "microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512"
+    },
+    "SixLabors.ImageSharp/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-hZmADrZvn1q9tjPNuuvvl8F8vkz+LFEhnfBkuvwq6Bjgyj3BcOBk6ct4qfssrs25vWIITeH1HkIVdcCYWacpLw==",
+      "path": "sixlabors.imagesharp/2.0.0",
+      "hashPath": "sixlabors.imagesharp.2.0.0.nupkg.sha512"
+    },
+    "System.CommandLine/2.0.0-beta3.22106.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-JbGQEw6T3c8CvxtWTl5ZhBSGu7fdQLuMngcmRcHausOWw+rqXTFITX8USxl/PAWmPwr0+/pIz7C92/OD3oM5yw==",
+      "path": "system.commandline/2.0.0-beta3.22106.2",
+      "hashPath": "system.commandline.2.0.0-beta3.22106.2.nupkg.sha512"
+    },
+    "System.CommandLine.NamingConventionBinder/2.0.0-beta3.22106.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gV/YmJlhto0ce4uFHTRMCDhrfh6DobrEJCtEFzuzvciXQ0tgoyomcnEA6uxHCJeRQ3pET4idaYbU8tAzIB5aDg==",
+      "path": "system.commandline.namingconventionbinder/2.0.0-beta3.22106.2",
+      "hashPath": "system.commandline.namingconventionbinder.2.0.0-beta3.22106.2.nupkg.sha512"
+    },
+    "System.Memory/4.5.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
+      "path": "system.memory/4.5.4",
+      "hashPath": "system.memory.4.5.4.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/iUeP3tq1S0XdNNoMz5C9twLSrM/TH+qElHkXWaPvuNOt+99G75NrV0OS2EqHx5wMN7popYjpc8oTjC1y16DLg==",
+      "path": "system.runtime.compilerservices.unsafe/6.0.0",
+      "hashPath": "system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/6.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZFCILZuOvtKPauZ/j/swhvw68ZRi9ATCfvGbk1QfydmcXBkIWecWKn/250UH7rahZ5OoDBaiAudJtPvLwzw85A==",
+      "path": "system.text.encoding.codepages/6.0.0",
+      "hashPath": "system.text.encoding.codepages.6.0.0.nupkg.sha512"
+    },
+    "PuyoTools.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

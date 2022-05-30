@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NexmodNCPUtils", "NexmodNCPUtils.csproj", "{1A28CBF1-A9B7-4BA6-86D6-C5E17F4C7568}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XNCPLib", "XNCPLib\XNCPLib.csproj", "{74D7764F-0D36-4909-8A45-28746ED99888}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharpNeedle", "..\..\SharpNeedle\Source\SharpNeedle\SharpNeedle.csproj", "{C8AB5461-B6DD-4714-9C21-02DE27FEC946}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Amicitia.IO", "..\..\SharpNeedle\Source\Dependencies\Amicitia.IO\src\Amicitia.IO\Amicitia.IO.csproj", "{EFB6A472-53B3-4112-BF31-715AC6F676E7}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\..\SharpNeedle\Source\SharpNeedle.Shared\SharpNeedle.Shared.projitems*{c8ab5461-b6dd-4714-9c21-02de27fec946}*SharedItemsImports = 5
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A28CBF1-A9B7-4BA6-86D6-C5E17F4C7568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A28CBF1-A9B7-4BA6-86D6-C5E17F4C7568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A28CBF1-A9B7-4BA6-86D6-C5E17F4C7568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A28CBF1-A9B7-4BA6-86D6-C5E17F4C7568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74D7764F-0D36-4909-8A45-28746ED99888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74D7764F-0D36-4909-8A45-28746ED99888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74D7764F-0D36-4909-8A45-28746ED99888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74D7764F-0D36-4909-8A45-28746ED99888}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8AB5461-B6DD-4714-9C21-02DE27FEC946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFB6A472-53B3-4112-BF31-715AC6F676E7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3C555B6-9578-4232-8406-768205F07A9C}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568": {
+      "ProjectGuid": "1a28cbf1-a9b7-4ba6-86d6-c5e17f4c7568",
+      "DisplayName": "NexmodNCPUtils",
+      "ColorIndex": 0
+    },
+    "74d7764f-0d36-4909-8a45-28746ed99888": {
+      "ProjectGuid": "74d7764f-0d36-4909-8a45-28746ed99888",
+      "DisplayName": "XNCPLib",
+      "ColorIndex": 1
+    },
+    "6ac60d89-b5d1-4862-8bf2-5086b9857d15": {
+      "ProjectGuid": "6ac60d89-b5d1-4862-8bf2-5086b9857d15",
+      "DisplayName": "EndianSwap",
+      "ColorIndex": 2
+    },
+    "86655fed-a414-475e-87d8-f78b6c4bf255": {
+      "ProjectGuid": "86655fed-a414-475e-87d8-f78b6c4bf255",
+      "DisplayName": "Amicitia.IO",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "d5045cb3-c98b-4a4f-aed3-e718efa47f36": {
+      "ProjectGuid": "d5045cb3-c98b-4a4f-aed3-e718efa47f36",
+      "DisplayName": "GvrTool",
+      "ColorIndex": 4
+    },
+    "c8ab5461-b6dd-4714-9c21-02de27fec946": {
+      "ProjectGuid": "c8ab5461-b6dd-4714-9c21-02de27fec946",
+      "DisplayName": "SharpNeedle",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}
