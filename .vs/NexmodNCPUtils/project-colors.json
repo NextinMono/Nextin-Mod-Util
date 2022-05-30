@@ -35,7 +35,12 @@
       "ProjectGuid": "c8ab5461-b6dd-4714-9c21-02de27fec946",
       "DisplayName": "SharpNeedle",
       "ColorIndex": 5
+    },
+    "19fca167-3072-4e2a-a507-32519882fbbf": {
+      "ProjectGuid": "19fca167-3072-4e2a-a507-32519882fbbf",
+      "DisplayName": "Amicitia.IO",
+      "ColorIndex": 6
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 7
 }

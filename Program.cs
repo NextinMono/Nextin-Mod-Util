@@ -184,6 +184,10 @@ public class Program
         }
         
     }
+    public static void ConvertGNCPColors(string path)
+    {
+
+    }
     public static void ConvertGNCP(string path)
     {
         var csdFile = ResourceUtility.Open<CsdProject>(@path);
