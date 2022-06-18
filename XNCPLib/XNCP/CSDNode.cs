@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 using Amicitia.IO.Binary;
 using XNCPLib.Extensions;
 using XNCPLib.Misc;
-using Amicitia.IO.Binary.Extensions;
 
 namespace XNCPLib.XNCP
 {

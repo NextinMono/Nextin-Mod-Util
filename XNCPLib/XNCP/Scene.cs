@@ -10,7 +10,6 @@ using XNCPLib.XNCP.Animation;
 using XNCPLib.Extensions;
 using Amicitia.IO.Binary;
 using XNCPLib.Misc;
-using Amicitia.IO.Binary.Extensions;
 
 namespace XNCPLib.XNCP
 {

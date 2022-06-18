@@ -6,6 +6,7 @@ using XNCPLib.XNCP;
 using Amicitia.IO.Binary;
 using SharpNeedle.Utilities;
 using SharpNeedle.IO;
+using System.Text;
 
 public class Program
 {
@@ -99,7 +100,10 @@ public class Program
                 string path;
                 if (Environment.GetCommandLineArgs().Length == 1)
                 {
-                    Console.Write("Enter path of the GNCP file [NOTE: You need a TXD file of the same name in the same folder as the GNCP file]: ");
+                    Console.Write("Enter path of the GNCP file");
+                    Console.ForegroundColor = ConsoleColor.DarkGray;
+                    Console.Write("[NOTE: You might need a TXD file of the same name to have textures]:");
+                    Console.ForegroundColor = ConsoleColor.White;
                     path = @Console.ReadLine();
                 }
                 else
@@ -116,12 +120,13 @@ public class Program
                 ConvertTXD(path);
                 ConvertGNCP(path);
             }
+
             else
             {
                 string path;
                 if (Environment.GetCommandLineArgs().Length == 1)
                 {
-                    Console.Write("Enter path of the GNCP file [NOTE: You'll have to extract textures on your own]: ");
+                    Console.Write("Enter path of the GNCP file: ");
                     path = @Console.ReadLine();
                 }
                 else
@@ -129,7 +134,7 @@ public class Program
                 path = path.Replace("\"", "");
                 if (Path.GetExtension(@path).IndexOf(".gncp", StringComparison.OrdinalIgnoreCase) < 0)
                 {
-                    Console.WriteLine("Aborted.");
+                    Console.WriteLine("Path doesn't contain the gncp extension. Aborted.");
                     return;
                 }
                 ConvertGNCP(path);
@@ -141,18 +146,86 @@ public class Program
     }
     public static void ConvertTXD(string path)
     {
-        ProcessStartInfo startInfo = new ProcessStartInfo();
-        startInfo.FileName = @Path.Combine(ProgramPath, "PuyoToolsModified", "PuyoToolsCli.exe");
-        startInfo.Arguments = $"archive extract --extract-source-folder --input \"{Regex.Replace(path, "gncp", "txd", RegexOptions.IgnoreCase)}\"";
-        Process? processExtractTXD = Process.Start(startInfo);
+        Console.WriteLine();
+        Console.WriteLine("Which compression format would you like for the DDS textures?");
+        Console.WriteLine("1. DTX1");
+        Console.WriteLine("2. DTX2");
+        Console.WriteLine("3. DTX3");
+        Console.WriteLine("4. DTX4");
+        Console.WriteLine("5. DTX5");
+        Console.WriteLine("6. A8R8G8B8 (default)");
+        Console.Write("Type in the number of the option you want:");
+        string opt = Console.ReadLine();
+        string formatDDS;
+        try
+        {
+            switch (int.Parse(opt))
+            {
+                case 1:
+                    {
+                        formatDDS = "DTX1";
+                        break;
+                    }
+                case 2:
+                    {
+                        formatDDS = "DTX2";
+                        break;
+                    }
+                case 3:
+                    {
+                        formatDDS = "DTX3";
+                        break;
+                    }
+                case 4:
+                    {
+                        formatDDS = "DTX4";
+                        break;
+                    }
+                case 5:
+                    {
+                        formatDDS = "DTX5";
+                        break;
+                    }
+                default:
+                    {
+                        formatDDS = "A8R8G8B8";
+                        break;
+                    }
 
-        processExtractTXD.WaitForExit();
+            }
+        }
+        catch { formatDDS = "A8R8G8B8"; }
+        
+
+        bool checkForZeros = true;
+        int indexForTexture = -1;
+        //Check if TXD of same name exists in path and extract it if its found
+        if (File.Exists(Regex.Replace(path, "gncp", "txd", RegexOptions.IgnoreCase)))
+        {
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = @Path.Combine(ProgramPath, "PuyoToolsModified", "PuyoToolsCli.exe");
+            startInfo.Arguments = $"archive extract --extract-source-folder --input \"{Regex.Replace(path, "gncp", "txd", RegexOptions.IgnoreCase)}\"";
+            Process? processExtractTXD = Process.Start(startInfo);
+            processExtractTXD.WaitForExit();
+            checkForZeros = true;
+        }
+        else
+        {            
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("Couldn't find TXD of the same name, skipping extraction...");
+            checkForZeros = false;
+        }
+
+
+        
         var directorygvr = Path.GetDirectoryName(path);
         string[] files = System.IO.Directory.GetFiles(directorygvr, "*.gvr");
         if (files.Length <= 0)
         {
-            Console.WriteLine("PuyoTools wasn't able to extract the TXD. Aborted");
-            Console.ReadKey();
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("No GVR files found. Skipping conversion...\nChecking for PNG images anyway...");
+            Console.ForegroundColor = ConsoleColor.White;
+            ConvertPNGtoDDS("A8R8G8B8", Directory.GetFiles(directorygvr, "*.png"));
             return;
         }
         for (int i = 0; i < files.Length; i++)
@@ -161,31 +234,73 @@ public class Program
         }
         foreach (string file in files)
         {
-            if (!Path.GetFileName(file).StartsWith("0"))
-                continue;
-            string indexFirstPass = Path.GetFileName(file).Substring(0, 3);
-            var indexSecondPass = indexFirstPass.TrimStart('0');
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.White;
 
-            int index = 0;
-            if (!string.IsNullOrEmpty(indexSecondPass))
-                index = Convert.ToInt32(indexSecondPass);
-            var fileName = Path.GetFileName(file).Remove(0, 3);
+            var fileName = Path.GetFileName(file);
+            var filePath = Path.GetFullPath(file);
+            if (checkForZeros)
+            {
+                if (indexForTexture == -1) indexForTexture++;
+                if (!Path.GetFileName(file).StartsWith("0"))
+                    continue;
+                string indexFirstPass = Path.GetFileName(file).Substring(0, 3);
+                var indexSecondPass = indexFirstPass.TrimStart('0');
 
+                if (!string.IsNullOrEmpty(indexSecondPass))
+                    indexForTexture = Convert.ToInt32(indexSecondPass);
+                fileName = Path.GetFileName(file).Remove(0, 3);
+                try { System.IO.File.Move(file, Path.Combine(Path.GetDirectoryName(file), fileName)); }
+                catch { }
+                
+                filePath = Path.Combine(Path.GetDirectoryName(file), fileName);
+            }
+            else
+                indexForTexture++;
 
-            var corrected = $"\"{file.Replace("\"", "")}\"";
+            var corrected = $"\"{filePath.Replace("\"", "")}\"";
             ProcessStartInfo startInfoGVR = new ProcessStartInfo();
             startInfoGVR.FileName = @Path.Combine(ProgramPath, "PuyoToolsModified", "PuyoToolsCli.exe");
             startInfoGVR.Arguments = $"texture decode --input {@corrected}";
             Process? processConvertGVR = Process.Start(startInfoGVR);
             processConvertGVR.WaitForExit();
-            Textures[index] = Regex.Replace(fileName, "gvr", "dds", RegexOptions.IgnoreCase);
-            File.Delete(file);
-            
+            Textures[indexForTexture] = Regex.Replace(fileName, "gvr", "dds", RegexOptions.IgnoreCase);
+            if (!File.Exists(Regex.Replace(filePath, "gvr", "png", RegexOptions.IgnoreCase)))
+            {
+                Console.BackgroundColor = ConsoleColor.Red;
+                Console.WriteLine($"PuyoTools couldn't convert {fileName}!");
+            }
+            else
+            File.Delete(file);            
         }
+        ConvertPNGtoDDS(formatDDS, Directory.GetFiles(directorygvr, "*.png"));
         
+    }
+    public static void ConvertPNGtoDDS(string format, string[] paths)
+    {
+        for (int i = 0; i < paths.Length; i++)
+        {
+            var corrected = $"\"{paths[i].Replace("\"", "")}\"";
+            ProcessStartInfo startInfoDDS = new ProcessStartInfo();
+            startInfoDDS.FileName = @Path.Combine(ProgramPath, "crunch", "bin", "crunch.exe");
+            startInfoDDS.RedirectStandardOutput = true;
+            
+            startInfoDDS.Arguments = $"-file {corrected} -outdir \"{@Path.GetDirectoryName(paths[i])}\" -fileformat dds -{format}";
+            Process? processConvertDDS = Process.Start(startInfoDDS);
+            Console.BackgroundColor = ConsoleColor.DarkBlue;
+            Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine($"Converting {Path.GetFileName(paths[i])} to DDS [{format}]...");
+            processConvertDDS.WaitForExit();
+
+            File.Delete(paths[i]);
+        }
+        Console.BackgroundColor = ConsoleColor.Black;
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine();
     }
     public static void ConvertGNCPColors(string path)
     {
+        
 
     }
     public static void ConvertGNCP(string path)
@@ -224,8 +339,7 @@ public class Program
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine("Conversion was successful, output will be in the same folder as the original file.");
             Console.BackgroundColor = ConsoleColor.Red;
-            Console.ForegroundColor = ConsoleColor.White;
-            Console.WriteLine("NOTE: You'll need to convert the textures from .PNG to .DDS manually. This is because I haven't found a good way to conver them in C# yet. You can use a program like paint.net for this!");
+            Console.ForegroundColor = ConsoleColor.White;           
             Console.WriteLine("NOTE: The result might have artifacts and the textures might look wrong, this is because the process is still W.I.P");
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
@@ -241,12 +355,14 @@ public class Program
         Console.WriteLine();
         Console.WriteLine("|---------------------------|");
         Console.WriteLine();
-        Console.WriteLine("NexMod NCP Utility v0.1 - by NextinHKRY");
+        Console.WriteLine("NexMod NCP Utility v0.2 - by NextinHKRY");
         Console.WriteLine();
         Console.WriteLine(panelMessage);
         Console.WriteLine();
         Console.WriteLine("|---------------------------|");
         Console.WriteLine();
+        if (Environment.GetCommandLineArgs().Length == 2)
+            Console.WriteLine($"Arguments found: {Environment.GetCommandLineArgs()[2]}");
         Console.ForegroundColor = ConsoleColor.White;
 
     }
@@ -311,6 +427,9 @@ public static class GNCPConvertSharpNeedle
     {
         ApplyIndentation();
         Console.WriteLine(text);
+    }
+    public static void HideOutput(string input)
+    {        
     }
 
 

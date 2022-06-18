@@ -10,14 +10,46 @@
 
   <ItemGroup>
     <Compile Remove="Amicitia.IO\**" />
+    <Compile Remove="crunch\crnlib\**" />
+    <Compile Remove="crunch\crunch\**" />
+    <Compile Remove="crunch\emscripten\**" />
+    <Compile Remove="crunch\example1\**" />
+    <Compile Remove="crunch\example2\**" />
+    <Compile Remove="crunch\example3\**" />
+    <Compile Remove="crunch\inc\**" />
     <Compile Remove="SharpNeedle\**" />
     <Compile Remove="XNCPLib\**" />
     <EmbeddedResource Remove="Amicitia.IO\**" />
+    <EmbeddedResource Remove="crunch\crnlib\**" />
+    <EmbeddedResource Remove="crunch\crunch\**" />
+    <EmbeddedResource Remove="crunch\emscripten\**" />
+    <EmbeddedResource Remove="crunch\example1\**" />
+    <EmbeddedResource Remove="crunch\example2\**" />
+    <EmbeddedResource Remove="crunch\example3\**" />
+    <EmbeddedResource Remove="crunch\inc\**" />
     <EmbeddedResource Remove="SharpNeedle\**" />
     <EmbeddedResource Remove="XNCPLib\**" />
     <None Remove="Amicitia.IO\**" />
+    <None Remove="crunch\crnlib\**" />
+    <None Remove="crunch\crunch\**" />
+    <None Remove="crunch\emscripten\**" />
+    <None Remove="crunch\example1\**" />
+    <None Remove="crunch\example2\**" />
+    <None Remove="crunch\example3\**" />
+    <None Remove="crunch\inc\**" />
     <None Remove="SharpNeedle\**" />
     <None Remove="XNCPLib\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="crunch\.git" />
+    <None Remove="crunch\.gitignore" />
+    <None Remove="crunch\bin\crunch.pdb" />
+    <None Remove="crunch\bin\crunch_x64.pdb" />
+    <None Remove="crunch\CHANGELOG.md" />
+    <None Remove="crunch\crn.workspace" />
+    <None Remove="crunch\crn_linux.workspace" />
+    <None Remove="crunch\README.md" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +63,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="crunch\bin\crunch.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="crunch\bin\crunch_x64.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="crunch\license.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="PuyoToolsModified\FormatWith.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

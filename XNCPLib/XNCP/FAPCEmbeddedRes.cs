@@ -6,7 +6,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Amicitia.IO.Binary;
-using Amicitia.IO.Binary.Extensions;
 
 namespace XNCPLib.XNCP
 {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.IO;
 
-namespace Amicitia.IO.Streams
+namespace Amicitia.IO.Binary
 {
     public class NullStream : Stream
     {
@@ -15,11 +15,11 @@ namespace Amicitia.IO.Streams
 
         public override void Flush() { }
 
-        public override int Read(byte[] buffer, int offset, int count) => 0;
+        public override int Read( byte[] buffer, int offset, int count ) => 0;
 
-        public override long Seek(long offset, SeekOrigin origin)
+        public override long Seek( long offset, SeekOrigin origin )
         {
-            switch (origin)
+            switch ( origin )
             {
                 case SeekOrigin.Begin:
                     Position = offset;
@@ -31,14 +31,14 @@ namespace Amicitia.IO.Streams
                     Position += offset;
                     break;
                 default:
-                    throw new ArgumentOutOfRangeException(nameof(origin), origin, null);
+                    throw new ArgumentOutOfRangeException( nameof( origin ), origin, null );
             }
 
             return Position;
         }
 
-        public override void SetLength(long value) => mLength = value;
+        public override void SetLength( long value ) => mLength = value;
 
-        public override void Write(byte[] buffer, int offset, int count) { }
+        public override void Write( byte[] buffer, int offset, int count ) { }
     }
 }

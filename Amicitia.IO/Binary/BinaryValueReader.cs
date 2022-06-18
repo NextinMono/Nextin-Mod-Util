@@ -148,7 +148,7 @@ namespace Amicitia.IO.Binary
         }
 
         [MethodImpl( MethodImplOptions.AggressiveInlining )]
-        public T ReadNative<T>() where T : unmanaged
+        private T ReadNative<T>() where T : unmanaged
         {
             ReadNative<T>( out var value );
             return value;

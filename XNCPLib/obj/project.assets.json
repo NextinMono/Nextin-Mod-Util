@@ -5234,8 +5234,8 @@
     },
     "Amicitia.IO/1.0.0": {
       "type": "project",
-      "path": "../SharpNeedle/Source/Dependencies/Amicitia.IO/src/Amicitia.IO/Amicitia.IO.csproj",
-      "msbuildProject": "../SharpNeedle/Source/Dependencies/Amicitia.IO/src/Amicitia.IO/Amicitia.IO.csproj"
+      "path": "../Amicitia.IO/Amicitia.IO.csproj",
+      "msbuildProject": "../Amicitia.IO/Amicitia.IO.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5271,6 +5271,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\Amicitia.IO\\Amicitia.IO.csproj": {
+              "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\Amicitia.IO\\Amicitia.IO.csproj"
+            },
             "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj": {
               "projectPath": "F:\\Programming n Testing\\EndianSwap\\EndianSwapXNCP\\Nextin-Mod-Util\\SharpNeedle\\Source\\Dependencies\\Amicitia.IO\\src\\Amicitia.IO\\Amicitia.IO.csproj"
             }
@@ -5307,7 +5310,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }
