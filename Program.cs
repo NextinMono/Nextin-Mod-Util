@@ -137,7 +137,7 @@ public class Program
                     Console.WriteLine("Path doesn't contain the gncp extension. Aborted.");
                     return;
                 }
-                ConvertGNCP(path);
+                ConvertGNCP(path, true);
             }
 
 
@@ -303,9 +303,21 @@ public class Program
         
 
     }
-    public static void ConvertGNCP(string path)
+    public static void ConvertGNCP(string path, bool colors = false)
     {
-        var csdFile = ResourceUtility.Open<CsdProject>(@path);
+        CsdProject csdFile = new CsdProject();
+        if(!colors)
+        csdFile = ResourceUtility.Open<CsdProject>(@path);
+        else
+        {
+            csdFile = ResourceUtility.Open<CsdProject>(@path);
+            using var reader = new BinaryObjectReader(@path, Endianness.Big, Encoding.ASCII);
+            var info = reader.ReadObject<SharpNeedle.Ninja.InfoChunk>();
+            var projectt = (ProjectChunk)info.Chunks[0];
+
+            csdFile.Project = projectt;
+            //csdFile.Textures = new ITextureList();
+        }
         if(csdFile.Textures.Count == 0)
         {
             Console.WriteLine("Type 1 to Invert Texture Index (might fix texture issues)");
@@ -346,6 +358,7 @@ public class Program
             Console.WriteLine("Press any key to quit.");
             Console.ForegroundColor = ConsoleColor.White;
             Console.ReadKey();
+            
         }
     }
     public static void IntroScreenTitle(string panelMessage)
@@ -365,6 +378,17 @@ public class Program
             Console.WriteLine($"Arguments found: {Environment.GetCommandLineArgs()[2]}");
         Console.ForegroundColor = ConsoleColor.White;
 
+    }
+
+    public static void Exit()
+    {
+        ProcessStartInfo Info = new ProcessStartInfo();
+        Info.Arguments = "/C ping 127.0.0.1 -n 2 && \"" + @ProgramPath + "\"";
+        Info.WindowStyle = ProcessWindowStyle.Hidden;
+        Info.CreateNoWindow = true;
+        Info.FileName = "cmd.exe";
+        Process.Start(Info);
+        Environment.Exit(0);
     }
 }
 
